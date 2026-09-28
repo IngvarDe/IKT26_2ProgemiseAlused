@@ -13,21 +13,23 @@
 
             Console.WriteLine("Sisesta automark");
             //siin sisestad teksti konsooli
-            string mark = Console.ReadLine();
+            //ToLower muudab kõik tähed väikseks
+            //ja siis leiab alati ülesse.
+            string mark = Console.ReadLine().ToLower();
 
-            if (mark == "BMW")
+            if (mark == "bmw")
             {
                 Console.WriteLine("See on BMW");
             }
-            else if (mark == "Audi")
+            else if (mark == "audi")
             {
                 Console.WriteLine("See on Audi");
             }
-            else if (mark == "Porsche")
+            else if (mark == "porsche")
             {
                 Console.WriteLine("See on Porsche");
             }
-            else if (mark == "Skoda")
+            else if (mark == "skoda")
             {
                 Console.WriteLine("See on Skoda");
                 Console.WriteLine("Nüüd vali mudel, kas Kodiaq või Octavia");
